@@ -1,0 +1,171 @@
+#app {
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+.light {
+  background-color: #cfe2ff;
+  color: #000;
+}
+
+.dark {
+  background-color: #031633;
+  color: #fff;
+}
+
+.gap{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+
+.card {
+  display:inline-block;
+  width: 25%;
+  max-width: 25%;
+  box-sizing: border-box; 
+  background-color: #a370f7;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 0.5rem;
+  border: 1px solid #e5e7eb;
+  &__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  &__title{
+    text-transform: capitalize;
+    color: #374151;
+  }
+  
+}
+
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+    background-color: #FFF;
+    padding: 25px;
+    border-radius: 12px;
+    width: 60vw;       
+    max-height: 80vh;   
+    overflow-y: auto;   
+    box-sizing: border-bo
+}
+
+button{
+  background-color: #0a58ca;
+  color: #FFF;
+  padding: .5rem .75rem;
+  margin: .5rem;
+}
+
+
+.ticket-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  &__group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+
+  &__title {
+    text-align: center;
+    color: #35495e;
+    margin-bottom: 25px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  &__group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #35495e;
+    text-transform: capitalize;
+  }
+
+  &__input,
+  &__textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    width: 80%;
+  }
+
+  &__select{
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    width: 30%;
+  }
+  
+  &__textarea {
+    min-height: 120px;
+    resize: vertical;
+  }
+
+  &__actions {
+    text-align: center;
+  }
+
+  &__submit-button {
+    padding: 12px 30px;
+    border-radius: 8px;
+    border: none;
+    background-color: #42b983;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+
+    &:hover {
+      background-color: #35495e;
+    }
+  }
+
+  .bg-yellow-600{
+    background-color: #cc9a06;
+  }
+  .bg-red-600{
+    background-color: #b02a37;
+  }
+  .bg-blue-600{
+    background-color: #0a58ca;
+  }
+  .bg-green-600{
+    background-color: #146c43
+  }
+  .text-white{
+    color:#FFF;
+  }
+}
