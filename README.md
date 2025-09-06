@@ -6,6 +6,7 @@
 - Run composer install, npm install
 - Copy .env.example → .env
 - Set environment variables - OpenAI
+- add your OpenAI key in CUST_OPENAI_API_KEY env variable
 - Run php artisan migrate --seed
 - Run npm run dev (or npm run build for production)
 - Serve the app (php artisan serve)
