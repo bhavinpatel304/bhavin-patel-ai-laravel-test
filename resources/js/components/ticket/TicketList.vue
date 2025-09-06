@@ -224,7 +224,8 @@ export default {
 
       try {
         await axios.post(`/api/tickets/${id}/classify`)
-        his.showFlash('Ticket classify successfully!', 'success')
+        this.fetchTickets()
+        this.showFlash('Ticket classify successfully!', 'success')
       } catch (err) {
         console.error('Failed to classify:', err)
         this.showFlash('Failed to classify ticket.', 'error')

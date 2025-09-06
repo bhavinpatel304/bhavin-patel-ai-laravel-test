@@ -163,6 +163,11 @@ class TicketController extends Controller
 
         try {
             ClassifyTicket::dispatch($ticket,$isClassifyEnabled);
+            if($ticket){
+                $ticket->update([
+                    'is_classified' => true,                    
+                ]);
+            }
             return response()->json(['message' => 'Ticket classification queued.']);
         } catch (\Exception $e) {
             return response()->json(['message' => 'An error occurred: ' . $e->getMessage()], 500);
